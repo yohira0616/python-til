@@ -13,3 +13,4 @@ def hoge(arg1,arg2='omitted'):
     print(arg2)
 
 hoge(1)
+
