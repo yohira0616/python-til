@@ -1,10 +1,13 @@
 from flask import Flask
+import json
+
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello,Flask!'
+    json_obj = {"hello":"flask!"}
+    return json.dumps(json_obj)
 
 @app.route('/hello')
 def hello():
